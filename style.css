@@ -1,0 +1,227 @@
+/* Remove margens e espaçamentos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO DA PÁGINA  */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+
+/* HEADER / MENU */
+header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7d00ff;
+}
+
+.logo {
+    color: #39ff14;
+    /* verde neon */
+    font-size: 28px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #7d00ff;
+}
+
+/* BANNER PRINCIPAL */
+#banner {
+    height: 400px;
+    background-image: url("imagens/banner-festival.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px solid #39ff14;
+}
+
+.banner-texto h2 {
+    font-size: 48px;
+    color: #39ff14;
+}
+
+.banner-texto p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.data-destaque {
+    color: #7d00ff;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #39ff14;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao:hover {
+    background-color: #7d00ff;
+    color: #ffffff;
+}
+
+/* SEÇÕES GERAIS */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #7d00ff;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.foto-publico,
+.foto-atracao,
+.foto-aviso {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #39ff14;
+    border-radius: 8px;
+    margin: 20px 0 10px 0;
+}
+
+.legenda {
+    max-width: 500px;
+    margin: 0 auto;
+    color: #cccccc;
+}
+
+/* LINE-UP */
+.atracao-principal {
+    font-size: 22px;
+    color: #39ff14;
+    margin-bottom: 15px;
+}
+
+.lista-lineup {
+    list-style: none;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lista-lineup li {
+    font-size: 18px;
+    background-color: #111111;
+    border: 1px solid #7d00ff;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+/* LOCAL E HORÁRIO */
+.info-local {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-local p {
+    flex: 1 1 250px;
+    background-color: #111111;
+    border: 1px solid #39ff14;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* AVISOS */
+.texto-aviso {
+    max-width: 500px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+/* FORMULÁRIO DE INGRESSOS */
+.form-ingresso {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    margin: 25px auto 0 auto;
+    text-align: left;
+}
+
+.form-ingresso label {
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.form-ingresso input,
+.form-ingresso select {
+    padding: 10px;
+    border: 1px solid #7d00ff;
+    border-radius: 6px;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 20px;
+    color: #cccccc;
+    border-top: 2px solid #7d00ff;
+}
+
+/* config para celular */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .banner-texto h2 {
+        font-size: 32px;
+    }
+}

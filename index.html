@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite - Festa Blackout Rave</title>
+
+    <!-- Aqui é o (CSS) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- O header fica fixo no topo e tem o menu de navegação -->
+    <header id="topo">
+        <h1 class="logo">BLACKOUT RAVE</h1>
+
+        
+        <!-- Isso faz a página pular direto para a seção clicada -->
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre a Festa</a></li>
+                <li><a href="#lineup">Line-up</a></li>
+                <li><a href="#local">Local e Horário</a></li>
+                <li><a href="#avisos">Avisos</a></li>
+                <li><a href="#ingressos">Ingressos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- A tag <main> é o conteúdo principal da página -->
+    <main>
+
+                        <!-- BANNER PRINCIPAL  -->
+        <section id="banner">
+            <div class="banner-texto">
+                <h2>BLACKOUT RAVE</h2>
+                <p>Uma noite de música eletrônica com metal</p>
+                <p class="data-destaque">25 de Outubro • 22h</p>
+
+                <!-- Botão que leva pro formulário-->
+                <a href="#ingressos" class="botao">Garantir meu ingresso</a>
+            </div>
+        </section>
+
+                            <!--  SOBRE A FESTA    -->
+        <!-- ID "sobre" é o destino do link Sobre a Festa -->
+        <section id="sobre">
+            <h2>Sobre a Festa</h2>
+
+            <p>
+                Vai tomando, da rave e metal, com DJ Victor Lou e convidados. Uma noite de música eletrônica pesada, com metal, para quem gosta da bagunça e mulher boa pode chegar aqui na festa i boa.
+            </p>
+
+            <!-- Imagem que sera o público alvo da festa -->
+            <img src="imagens/garota.png" alt="Público-alvo da festa" class="foto-publico">
+            <p class="legenda">
+                Esse é o público-alvo da festa: quem gosta de mulher boa demais vai estar tendo, música eletrônica e metal industrial.
+            </p>
+        </section>
+
+                            <!--  LINE-UP    -->
+        <section id="lineup">
+            <h2>Line-up</h2>
+
+            <!-- Atração principal, com foto e explicação do estilo dele -->
+            <img src="imagens/victor-lou.png" alt="DJ Victor Lou" class="foto-atracao">
+            <p class="atracao-principal">Atração Principal: DJ VICTOR LOU</p>
+            <p>
+                Victor Lou mistura batidas eletrônicas pesadas com metal, criando sets intensos e cheios de energia.
+                É conhecido por transições rápidas e por manter a pista lotada
+                até o amanhecer.
+            </p>
+
+            <!-- Lista da line up -->
+            <h3>Também tocam na noite:</h3>
+            <ul class="lista-lineup">
+                <li>DJ Arana</li>
+                <li>Vintage Culture</li>
+                <li>Beltran</li>
+                <li>Mochak</li>
+            </ul>
+        </section>
+
+                            <!--  LOCAL E HORÁRIO    -->
+        <section id="local">
+            <h2>Local e Horário</h2>
+
+            <!-- Os três cards abaixo são com Flexbox -->
+            <div class="info-local">
+                <p><strong>Data:</strong> 25 de Outubro de 2026</p>
+                <p><strong>Horário:</strong> 22h às 06h</p>
+                <p><strong>Local:</strong> Açougue-frango - Av. da Aura Maxima, 777</p>
+            </div>
+        </section>
+
+        <!-- AVISOS IMPORTANTES  -->
+        <section id="avisos">
+            <h2>Avisos Importantes</h2>
+            <img src="imagens/aviso-substancias.png" alt="Aviso de proibição de substâncias" class="foto-aviso">
+            <p class="texto-aviso">
+                É PROIBIDO a comercialização de qualquer tipo de
+                substância ilícita dentro do evento o uso apenas pessoal. (Vamos deixar passar algumas bebidas, apenas um pouco de Mdma, mas nada de exageros, fecho?)
+            </p>
+        </section>
+
+        <!--  INGRESSOS (formulário)  -->
+        <!-- Esta é a parte de conversão da landing page -->
+        <section id="ingressos">
+            <h2>Garanta seu ingresso</h2>
+            <p>Preencha os dados abaixo e receba o link de compra por e-mail.</p>
+
+            <!-- O formulário -->
+            <form class="form-ingresso">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+
+                <label for="quantidade">Quantidade de ingressos</label>
+                <select id="quantidade" name="quantidade">
+                    <option value="1">1 ingresso</option>
+                    <option value="2">2 ingressos</option>
+                    <option value="3">3 ingressos</option>
+                    <option value="4">4 ingressos</option>
+                </select>
+
+                <button type="submit" class="botao">Reservar ingresso</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 18-2026 Amassando na aula de HTML e CSS</p>
+    </footer>
+
+</body>
+
+</html>
